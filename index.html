@@ -3,109 +3,321 @@
 <head>
     <meta charset = "UTF-8">
     <meta name = "viewport" content="width=device-width, initial-scale=1">
-    <title Meherzad Antia | Portfolio></title>
-    <link rel = "stylesheet" href = "styles.css">    
+    <title> Meherzad Antia | Portfolio</title>
+    <link rel = "stylesheet" href = "Styles/styles.css">  
+    
+    
+    <!-- boostrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- fonts and icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- zoom in effect on projects section -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   
+
+ 
+
+
+
 </head>
 
 <body>
 
-    <header>
-        <nav class="container">
-          <div class="logo">Meherzad Antia</div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+    <!-- HEADER/NAV BAR -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-sm navbar-light container">
+            <div class="logo">
+                <span id="typewriter" style="color: #e91e63;"></span> Meherzad Antia
+              </div>
+            <!-- hamburger -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav-links navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MeherzadA_Resume.pdf" target="_blank">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    
-      <!-- Home / Landing -->
-    <section id="home" class="landing">
-        <div class="container">
-            <h1>Hi, I'm Meherzad 👋</h1>
+
+
+    <!-- About Me -->
+    <section id="about" class="floating container about-section d-flex flex-column flex-md-row align-items-center justify-content-between gap-4 py-4" data-aos="fade-up">
+        <div class="about-text col-md-6 txt-md-start text-start">
+            <h2>Hey there, I'm Meherzad! 👋</h2>
             <p>
-             I'm a Computer Science student at the University of Guelph, interested in software development, and anything that mixes creativity with technology.  
-                Outside of coding, you’ll usually find me running, playing basketball, or thrifting for cool finds :&)
+                I'm a Computer Science student at the University of Guelph. I enjoy software development,
+                problem-solving, and just being creative!  Take a look at some of the cool things I've made: 
             </p>
-              
+        </div>
+        <div class="animated-role col-md-5 text-center">
+            <p class="engaging-text mb-0 fs-4 fw-semibold">I am a <span id="changingText">Developer</span></p>
         </div>
     </section>
     
-      <!-- About -->
-    <!-- <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Short bio about who you are, what you're passionate about, and what you're aiming for.</p>
-    </section>
-     -->
-      <!-- Skills -->
-      <!-- <section id="skills" class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div>HTML</div>
-          <div>CSS</div>
-          <div>JavaScript</div>
-          <div>React</div>
-          <div>MySQL</div>
-          <div>Git</div>
+    <section style="margin-top: 10px; ">
+
+        <div style="text-align: center;">
+          <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+            <a href="https://www.linkedin.com/in/meherzad-antia-5923a7231/" target="_blank" class="contact-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/MeherzadA" target="_blank" class="contact-icon">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:meherzadantia08@gmail.com" class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="MeherzadA_Resume.pdf" target="_blank" class="contact-icon">
+                <i class="fas fa-file-alt"></i>
+              </a>
+          </div>
         </div>
-      </section> -->
+    </section>
     
-      <!-- Projects -->
-      <section id="projects" class="container">
+
+
+
+
+
+
+    <!-- PROJECTS  -->
+    <section id="projects" class="container"  data-aos="zoom-in">
         <h2>Projects</h2>
-
+    
         <div class="projects-grid">
+    
+            <!-- Funtendo -->
+            <div class="project-card">
+                <div id="carouselFuntendo" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/funtendo1.png" class="d-block w-100 carousel-img" alt="Funtendo Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/funtendo2.png" class="d-block w-100 carousel-img" alt="Funtendo Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/funtendo3.png" class="d-block w-100 carousel-img" alt="Funtendo Image 3">
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselFuntendo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselFuntendo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselFuntendo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>FUNTENDO</h3>
+                    <p>Nintendo-themed web app featuring a soundboard and a photo editor with game stickers.</p>
+                    <div class="tech-stack">
+                        <span><i class="fab fa-html5"></i>HTML</span>
+                        <span><i class="fab fa-css3-alt"></i>CSS</span>
+                        <span><i class="fab fa-js-square"></i>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/MeherzadA/Edu-Bot" target="_blank" class="view-project-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+    
+            <!-- PC Database Manager -->
+            <div class="project-card">
+                <div id="carouselPCDB" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/pcdb1.png" class="d-block w-100 carousel-img" alt="PC Database Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/pcdb2.png" class="d-block w-100 carousel-img" alt="PC Database Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/pcdb3.png" class="d-block w-100 carousel-img" alt="PC Database Image 3">
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselPCDB" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselPCDB" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselPCDB" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>PC Database Manager</h3>
+                    <p>Collaborated in a team to develop a Java application using JSON for data storage, managing computer orders, customer details, statuses, and sales reports.</p>
+                    
+                    <div class="tech-stack">
+                        <span><i class="fab fa-java"></i>Java</span>
+                        <span><i class="fas fa-file-code"></i>JSON</span>
+                    </div>
 
-        <!-- Funtendo -->
-          <div class="project-card">
-            <h3>FUNTENDO</h3>
-            <p>Nintendo-themed web app featuring a soundboard and a photo editor with game stickers.</p>
-            <a href="https://meherzada.github.io/FUNTENDO-WEBSITE/" target="_blank">View Project</a>
-          </div>
-          <!-- Add more project cards -->
-          <div class="project-card">
-            <h3>Computer System Database Manager</h3>
-            <p>Collaborated in a team to develop a Java application using JSON for data storage, managing computer orders, customer details, statuses, and sales reports.</p>
-            <a href="#" target="_blank">View Project</a>
-          </div>
-           
-          <div class="project-card">
-            <h3>Project Title</h3>
-            <p>Brief description of the project.</p>
-            <a href="#" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Project Title</h3>
-            <p>Brief description of the project.</p>
-            <a href="#" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Project Title</h3>
-            <p>Brief description of the project.</p>
-            <a href="#" target="_blank">View Project</a>
+                    <a href="https://github.com/MeherzadA/Edu-Bot" target="_blank" class="view-project-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Hoops Hub -->
+            <div class="project-card">
+                <div id="carouselHoopsHub" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/hoops1.png" class="d-block w-100 carousel-img" alt="Hoops Hub Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/hoops2.png" class="d-block w-100 carousel-img" alt="Hoops Hub Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/hoops3.png" class="d-block w-100 carousel-img" alt="Hoops Hub Image 3">
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselHoopsHub" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselHoopsHub" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselHoopsHub" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Hoops Hub</h3>
+                    <p>A Flask-based web app that lets users search NBA/ABA players, view season and career stats, visualize them with radar charts, and check the weekly game schedule.</p>
+                    <div class="tech-stack">
+                        <span><i class="fab fa-python"></i>Python</span>
+                        <span><i class="fas fa-flask"></i>Flask</span>
+                        <span><i class="fab fa-html5"></i>HTML</span>
+                        <span><i class="fab fa-css3-alt"></i>CSS</span>
+                    </div>
+                    <a href="https://github.com/MeherzadA/Edu-Bot" target="_blank" class="view-project-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+    
+            <!-- TeachMate -->
+            <div class="project-card">
+                <div id="carouselTeachMate" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/teachmate1.png" class="d-block w-100 carousel-img" alt="TeachMate Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/teachmate2.png" class="d-block w-100 carousel-img" alt="TeachMate Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/teachmate3.png" class="d-block w-100 carousel-img" alt="TeachMate Image 3">
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselTeachMate" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselTeachMate" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselTeachMate" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>TeachMate</h3>
+                    <p>Discord bot to manage assignments, track goals, lock channels, and automate study sessions to enhance classroom productivity and student engagement.</p>
+                    
+                    <div class="tech-stack">
+                        <span><i class="fab fa-python"></i>Python</span>
+                        <span><i class="fas fa-database"></i>MySQL</span>
+                    </div>
+                    <a href="https://github.com/MeherzadA/Edu-Bot" target="_blank" class="view-project-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                      
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    
+    <!-- lbj QUOTE -->
+    <section id="quote" class="quote-section">
+        <div class="quote-container">
+            <div class="quote-content">
+                <p class="quote-text">“I think team first. It allows me to succeed, it allows my team to succeed”</p>
+                <p class="quote-author">- Meherzad Antia & LeBron James</p>
+            </div>
+            <div class="quote-image">
+                <img src="Images/lebron.png" alt="LeBron James" class="lebron-image floating">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+    <!-- contacts icons -->
+    <section id="contact" style="padding: 2rem 0; margin-top: 10px;">
+
+        <div style="text-align: center;">
+          <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+            <a href="https://www.linkedin.com/in/meherzad-antia-5923a7231/" target="_blank" class="contact-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/MeherzadA" target="_blank" class="contact-icon">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:meherzadantia08@gmail.com" class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="MeherzadA_Resume.pdf" target="_blank" class="contact-icon">
+                <i class="fas fa-file-alt"></i>
+              </a>
           </div>
         </div>
-      </section>
-    
-      <!-- Resume -->
-      <section id="resume" class="container">
-        <h2>Resume</h2>
-        <a href="resume.pdf" download class="button">Download Resume</a>
-      </section>
-    
-      <!-- Contact -->
-      <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> | <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
-      </section>
-    
-      <script src="script.js"></script>
+    </section>
+      
 
 
+
+
+
+    <!-- zoom in aos -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0">
+                    <img src="" id="modalImage" class="img-fluid w-100 rounded" alt="Expanded image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="Scripts/typewriter.js"></script>
+    <script src="Scripts/modal-image.js"></script>
+    <script src="Scripts/about-me.js"></script>
+    <script src="Scripts/load.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+
+    
+
+  
 
 </body>
-
 </html>
